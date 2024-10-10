@@ -1,0 +1,56 @@
+body {
+  position: relative;
+  color: #1b1b1b;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collapse-container {
+  position: relative;
+  min-height: 300px;
+  min-width: 300px;
+  max-width: 600px;
+  width: calc(100% - 30px);
+}
+
+.collapse-button {
+  padding: 7px 15px;
+  margin: 20px 20px 0px;
+  font-family: inherit;
+  border: 1px solid #001b726e;
+  border-radius: 6px;
+  color: #f0f2f3;
+  background-color: #2255a7;
+  cursor: pointer;
+}
+
+.collapse-button:hover {
+  box-shadow: 0px 0px 10px 1px #193f7c;
+}
+
+.collapse-button:active {
+  box-shadow: 0px 0px 15px 2px #071730;
+}
+
+.collapse-text {
+  display: flex;
+  margin: 20px 20px 0px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.collapse-text p {
+  padding: 15px;
+  border: 1px solid #808080;
+}
+
+.collapse-transition {
+  max-height: 350px;
+  transition: 2s;
+}
